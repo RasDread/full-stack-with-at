@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms Workshop</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <form action="#" method="get">
+      <!-- Contact Details -->
+      <fieldset>
+        <legend>Contact Details</legend>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="2"
+          maxlength="50"
+        />
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br /><br />
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" maxlength="100" />
+        <br /><br />
+        <label for="message">Message:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          required
+          minlength="10"
+          maxlength="500"
+        ></textarea>
+      </fieldset>
+      <br />
+      <!-- Contact Preferences -->
+      <fieldset>
+        <legend>Preferences</legend>
+        <p>Preferred Contact Method:</p>
+        <label>
+          <input type="radio" name="contactMethod" value="email" required />
+          Email
+        </label>
+        <label>
+          <input type="radio" name="contactMethod" value="phone" />
+          Phone
+        </label>
+        <br /><br />
+        <label>
+          <input type="checkbox" name="subscribe" value="yes" />
+          Subscribe to our newsletter
+        </label>
+      </fieldset>
+      <br />
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
